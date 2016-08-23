@@ -9,20 +9,28 @@
 import Foundation
 import AVFoundation
 
-let SPDefaultClientName:String = "jenny"
-let SPBaseCapabilityTokenUrl:String = "http://example.com/generateToken?%@"
-let SPTwiMLAppSid:String = "APxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
-public class Phone : NSObject, TCDeviceDelegate {
+
+public class Phone : NSObject, TCDeviceDelegate,TCConnectionDelegate {
     var device:TCDevice!
     var connection:TCConnection!
     var pendingConnection:TCConnection!
     
-    func login() {
+    
+    
+    var SPDefaultClientName : String = ""
+    var SPBaseCapabilityTokenUrl:String = ""
+    var SPTwiMLAppSid:String = ""
+    
+    func login(clientName : String, SPBaseCapabilityTokenUrl: String, SPTwiMLAppSid: String) {
+        self.SPDefaultClientName=clientName;
+        self.SPBaseCapabilityTokenUrl=SPBaseCapabilityTokenUrl;
+        self.SPTwiMLAppSid=SPTwiMLAppSid;
     
         TwilioClient.sharedInstance().setLogLevel(TCLogLevel.LOG_VERBOSE)
         
         let url:String = self.getCapabilityTokenUrl()
+        NSLog("url : "+url);
         
         let swiftRequest = SwiftRequest()
         swiftRequest.get(url, callback: { (err, response, body) -> () in
@@ -30,7 +38,8 @@ public class Phone : NSObject, TCDeviceDelegate {
                 return
             }
             
-            let token = NSString(data: body as! NSData, encoding: NSUTF8StringEncoding) as! String
+            //let token = NSString(data: body as! NSData, encoding: NSUTF8StringEncoding) as! String
+            let token = body as! NSString
             print(token)
             
             if err == nil && token != "" {
@@ -38,8 +47,9 @@ public class Phone : NSObject, TCDeviceDelegate {
                     self.device = TCDevice(capabilityToken: token as String, delegate: self)
                 }
                 else {
-                    self.device!.updateCapabilityToken(token)
+                    self.device!.updateCapabilityToken(token as String)
                 }
+                self.listen();
             }
             else if err != nil && response != nil {
                 // We received and error with a response
@@ -54,19 +64,29 @@ public class Phone : NSObject, TCDeviceDelegate {
         
         var querystring:String = String()
         
-        querystring += String(format:"&sid=%@", SPTwiMLAppSid)
-        querystring += String(format:"&name=%@", SPDefaultClientName)
+        //querystring += String(format:"&sid=%@", SPTwiMLAppSid)
+        querystring += String(format:"&client=%@", SPDefaultClientName)
 
         return String(format:SPBaseCapabilityTokenUrl, querystring)
     }
 
     func connectWithParams(params dictParams:Dictionary<String,String> = Dictionary<String,String>()) {
         if !self.capabilityTokenValid() {
-            self.login()
+            self.login(self.SPDefaultClientName,SPBaseCapabilityTokenUrl: self.SPBaseCapabilityTokenUrl,SPTwiMLAppSid: self.SPTwiMLAppSid)
         }
         
-        self.connection = self.device?.connect(dictParams, delegate: nil)
+        self.connection = self.device?.connect(dictParams, delegate: self)
+
     }
+    
+    func listen(){
+        if !self.capabilityTokenValid() {
+            self.login(self.SPDefaultClientName,SPBaseCapabilityTokenUrl: self.SPBaseCapabilityTokenUrl,SPTwiMLAppSid: self.SPTwiMLAppSid)
+        }
+        
+        self.device.listen();
+    }
+    
     
     func acceptConnection() {
         self.connection = self.pendingConnection
@@ -120,6 +140,8 @@ public class Phone : NSObject, TCDeviceDelegate {
         
             if (expirationTimeValue-Int64(currentTimeValue)) > 0 {
                 isValid = true
+            }else {
+                print ("token not valid")
             }
         }
     
@@ -128,10 +150,20 @@ public class Phone : NSObject, TCDeviceDelegate {
     
     public func deviceDidStartListeningForIncomingConnections(device: TCDevice)->() {
         print("Started listening for incoming connections")
+        self.device.incomingSoundEnabled=false
+    }
+    
+    public func device( didStartListeningForIncomingConnections device:TCDevice)->() {
+        print("Started listening for incoming connections")
     }
     
     public func device(device:TCDevice, didStopListeningForIncomingConnections error:NSError)->(){
         print("Stopped listening for incoming connections")
+    }
+    
+    public func device(device:TCDevice, didReceivePresenceUpdate presenceEvent:TCPresenceEvent)->(){
+        print("didReceivePresenceUpdate"+presenceEvent.name);
+        
     }
     
     public func device(device:TCDevice, didReceiveIncomingConnection connection:TCConnection)->() {
@@ -143,4 +175,32 @@ public class Phone : NSObject, TCDeviceDelegate {
             object: nil,
             userInfo:nil)
     }
+    
+    public func connection(connection:TCConnection, didFailWithError error:NSError)->(){
+        print("connection : didFailWithError");
+        
+        NSNotificationCenter.defaultCenter().postNotificationName(
+            "PendingDisconnectReceived",
+            object: nil,
+            userInfo:nil)
+    }
+    
+    public func connectionDidStartConnecting(connection:TCConnection)->(){
+        print("connection : connectionDidStartConnecting");
+    }
+    
+    public func connectionDidConnect(connection:TCConnection)->(){
+        print("connection : connectionDidConnect");
+    }
+    
+    public func connectionDidDisconnect(connection:TCConnection)->(){
+        print("connection : connectionDidDisconnect");
+        
+        NSNotificationCenter.defaultCenter().postNotificationName(
+            "PendingDisconnectReceived",
+            object: nil,
+            userInfo:nil)
+    }
+    
+    
 }

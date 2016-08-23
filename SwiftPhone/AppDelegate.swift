@@ -8,6 +8,10 @@
 
 import UIKit
 
+
+//let SPDefaultReceiver:String = "client:jenny"
+//let SPDefaultReceiver:String = "00393472503196"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -19,6 +23,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound], categories: nil))
         }
 
+        let notification = launchOptions?[UIApplicationLaunchOptionsLocalNotificationKey] as! UILocalNotification!
+        if (notification != nil) {
+            // Do your stuff with notification
+            NSNotificationCenter.defaultCenter().postNotificationName(
+                "tapNotificationIncomingConnectionReceived",
+                object: nil,
+                userInfo:nil)
+        }
+        
         return true
     }
 
@@ -44,5 +57,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        /*
+        var topController : UIViewController = (application.keyWindow?.rootViewController)!
+        
+        while ((topController.presentedViewController) != nil) {
+            
+            topController = topController.presentedViewController!
+        }
+        
+        let alert = UIAlertController(title: "", message: notification.alertBody, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: {(action: UIAlertAction!) in}))
+        
+        topController.presentViewController(alert, animated: true, completion: nil)
+        */
+        
+        
+            // Do your stuff with notification
+            NSNotificationCenter.defaultCenter().postNotificationName(
+                "tapNotificationIncomingConnectionReceived",
+                object: nil,
+                userInfo:nil)
+        
+        
+    }
+    
 }
 
