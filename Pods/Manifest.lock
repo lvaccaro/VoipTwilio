@@ -1,10 +1,17 @@
 PODS:
-  - TwilioSDK (1.2.4)
+  - BRYXBanner (0.5.2):
+    - BRYXBanner/Core (= 0.5.2)
+  - BRYXBanner/Core (0.5.2)
+  - TwilioSDK (1.2.7)
 
 DEPENDENCIES:
+  - BRYXBanner
   - TwilioSDK
 
 SPEC CHECKSUMS:
-  TwilioSDK: 11d5f25090f76f6fa123cb9416e16fda5572faf5
+  BRYXBanner: 5f0911d52e0a77e088f7ea7ddcdebd02afb7828a
+  TwilioSDK: d3982acf6880ddf3ce57c4444e021a71c5f35653
 
-COCOAPODS: 0.36.4
+PODFILE CHECKSUM: bac2c09889c5903945045b656887364c4fc736ea
+
+COCOAPODS: 1.0.1
