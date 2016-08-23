@@ -9,7 +9,7 @@
         <!--Main View Controller-->
         <scene sceneID="IaV-cS-seb">
             <objects>
-                <viewController id="4QD-3P-zdF" userLabel="Main View Controller" customClass="MainViewController" customModule="SwiftPhone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4QD-3P-zdF" userLabel="Main View Controller" customClass="MainViewController" customModule="VoipTwilio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Ec-sc-XdI"/>
                         <viewControllerLayoutGuide type="bottom" id="f7M-r5-vPh"/>
@@ -37,34 +37,29 @@
                                     <action selector="start:" destination="4QD-3P-zdF" eventType="touchUpInside" id="Abu-L4-jlS"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0039xxxxxxxxxx" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KPG-8y-T9e">
-                                <rect key="frame" x="20" y="264" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="luca" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kff-mG-XDP">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="luca" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kff-mG-XDP">
                                 <rect key="frame" x="20" y="127" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://xxx.herokuapp.com/token?%@" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OZp-gB-uWX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://xxx.herokuapp.com/token?%@" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OZp-gB-uWX">
                                 <rect key="frame" x="20" y="197" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Username to identify the client" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSn-Sd-Wax">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username to identify the client" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSn-Sd-Wax">
                                 <rect key="frame" x="20" y="98" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Twilio Capability Token Url" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57d-UA-ZOg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twilio Capability Token Url" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57d-UA-ZOg">
                                 <rect key="frame" x="20" y="168" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="SPTwiMLAppSid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc4-wf-lsj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPTwiMLAppSid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc4-wf-lsj">
                                 <rect key="frame" x="20" y="235" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -83,27 +78,35 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="APxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="teN-QA-kRt">
-                                <rect key="frame" x="20" y="326" width="560" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="APxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="teN-QA-kRt">
+                                <rect key="frame" x="20" y="264" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Voip Destionation Number " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aef-zm-uW2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voip Destionation Number " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aef-zm-uW2">
                                 <rect key="frame" x="20" y="302" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0039xxxxxxxxxx" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KPG-8y-T9e">
+                                <rect key="frame" x="20" y="326" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="teN-QA-kRt" firstAttribute="top" secondItem="qc4-wf-lsj" secondAttribute="bottom" constant="8" id="4C3-7i-T5K"/>
                             <constraint firstAttribute="leadingMargin" secondItem="OZp-gB-uWX" secondAttribute="leading" id="5DA-E6-2Fy"/>
                             <constraint firstAttribute="leadingMargin" secondItem="57d-UA-ZOg" secondAttribute="leading" id="5pN-0m-XLb"/>
                             <constraint firstAttribute="leadingMargin" secondItem="aef-zm-uW2" secondAttribute="leading" id="6hx-1l-ZFd"/>
                             <constraint firstAttribute="leadingMargin" secondItem="KPG-8y-T9e" secondAttribute="leading" id="7zJ-kB-sOb"/>
+                            <constraint firstItem="qc4-wf-lsj" firstAttribute="top" secondItem="OZp-gB-uWX" secondAttribute="bottom" constant="8" id="8ZB-23-sv3"/>
                             <constraint firstItem="f7M-r5-vPh" firstAttribute="top" secondItem="v8G-mp-vwg" secondAttribute="bottom" constant="8" id="9YT-xd-GJW"/>
                             <constraint firstAttribute="leadingMargin" secondItem="teN-QA-kRt" secondAttribute="leading" id="Bn2-HJ-xW6"/>
                             <constraint firstItem="q1g-Te-p6X" firstAttribute="top" secondItem="7Ec-sc-XdI" secondAttribute="bottom" id="CDH-nr-Hiw"/>
+                            <constraint firstItem="zSn-Sd-Wax" firstAttribute="top" secondItem="q1g-Te-p6X" secondAttribute="bottom" constant="30" id="DMA-u5-Wln"/>
                             <constraint firstAttribute="leadingMargin" secondItem="q1g-Te-p6X" secondAttribute="leading" id="GLd-2g-RBf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="teN-QA-kRt" secondAttribute="trailing" id="Grr-aX-Yq7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="v8G-mp-vwg" secondAttribute="trailing" id="IeI-kI-sMU"/>
@@ -112,13 +115,18 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Kff-mG-XDP" secondAttribute="trailing" id="ONQ-of-5Wb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qc4-wf-lsj" secondAttribute="trailing" id="STW-Qk-nCS"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Kff-mG-XDP" secondAttribute="leading" id="VY4-jW-AYd"/>
+                            <constraint firstItem="Kff-mG-XDP" firstAttribute="top" secondItem="zSn-Sd-Wax" secondAttribute="bottom" constant="8" id="ags-Ov-KVl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zSn-Sd-Wax" secondAttribute="trailing" id="b0L-YC-1iE"/>
                             <constraint firstAttribute="leadingMargin" secondItem="v8G-mp-vwg" secondAttribute="leading" id="coh-W7-geR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aef-zm-uW2" secondAttribute="trailing" id="eZJ-vV-lOm"/>
+                            <constraint firstItem="OZp-gB-uWX" firstAttribute="top" secondItem="57d-UA-ZOg" secondAttribute="bottom" constant="8" id="f5m-fi-i2B"/>
                             <constraint firstAttribute="leadingMargin" secondItem="qc4-wf-lsj" secondAttribute="leading" id="hKw-lg-JOa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="q1g-Te-p6X" secondAttribute="trailing" id="haa-35-iJ4"/>
+                            <constraint firstItem="KPG-8y-T9e" firstAttribute="top" secondItem="aef-zm-uW2" secondAttribute="bottom" constant="3" id="hws-JI-K2r"/>
                             <constraint firstAttribute="leadingMargin" secondItem="zSn-Sd-Wax" secondAttribute="leading" id="jOc-Lo-2Mc"/>
+                            <constraint firstItem="57d-UA-ZOg" firstAttribute="top" secondItem="Kff-mG-XDP" secondAttribute="bottom" constant="11" id="lLx-z1-215"/>
                             <constraint firstItem="MWa-yT-bro" firstAttribute="centerX" secondItem="p7J-Sr-uDJ" secondAttribute="centerX" id="qfV-1o-t3p"/>
+                            <constraint firstItem="aef-zm-uW2" firstAttribute="top" secondItem="teN-QA-kRt" secondAttribute="bottom" constant="8" id="rDH-AS-YYi"/>
                             <constraint firstItem="4QP-V5-Olb" firstAttribute="centerX" secondItem="p7J-Sr-uDJ" secondAttribute="centerX" id="rV9-Qr-dhx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="57d-UA-ZOg" secondAttribute="trailing" id="x2n-AJ-IDl"/>
                             <constraint firstItem="v8G-mp-vwg" firstAttribute="top" secondItem="4QP-V5-Olb" secondAttribute="bottom" constant="16" id="yKB-zE-oDc"/>
@@ -141,7 +149,7 @@
         <!--Dial View Controller-->
         <scene sceneID="otO-jE-Qc1">
             <objects>
-                <viewController id="xNT-Jf-lMU" userLabel="Dial View Controller" customClass="DialViewController" customModule="SwiftPhone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xNT-Jf-lMU" userLabel="Dial View Controller" customClass="DialViewController" customModule="VoipTwilio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oIH-Vc-9LG"/>
                         <viewControllerLayoutGuide type="bottom" id="wcu-hW-MTg"/>
