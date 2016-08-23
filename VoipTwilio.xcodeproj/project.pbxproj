@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F8E88CAC081D3FE8102B422 /* Pods_SwiftPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EDEE2BFB357CCCF8A915FC /* Pods_SwiftPhone.framework */; };
+		1F8154EF1A7946DF001ABEA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8154EE1A7946DF001ABEA9 /* AppDelegate.swift */; };
+		1F8154F41A7946DF001ABEA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8154F21A7946DF001ABEA9 /* Main.storyboard */; };
+		1F8154F61A7946DF001ABEA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8154F51A7946DF001ABEA9 /* Images.xcassets */; };
+		1F8154F91A7946DF001ABEA9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8154F71A7946DF001ABEA9 /* LaunchScreen.xib */; };
+		1FAD94931A7BD89200BD6E57 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD94921A7BD89200BD6E57 /* Phone.swift */; };
+		1FAD94CF1A7FE80000BD6E57 /* SwiftRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD94CE1A7FE80000BD6E57 /* SwiftRequest.swift */; };
+		801EDB9D1EE9E10AFBD43509 /* Pods_VoipTwilio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA5184F3264F50EEF5827EB /* Pods_VoipTwilio.framework */; };
+		9CF23AFA1D63DCE70085527D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF23AF91D63DCE70085527D /* MainViewController.swift */; };
+		9CF23AFC1D63DCF90085527D /* DialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF23AFB1D63DCF90085527D /* DialViewController.swift */; };
+		9CF23AFE1D64071C0085527D /* ringtone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF23AFD1D64071C0085527D /* ringtone.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F8154FF1A7946DF001ABEA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8154E11A7946DF001ABEA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F8154E81A7946DF001ABEA9;
+			remoteInfo = SwiftPhone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F8154E91A7946DF001ABEA9 /* VoipTwilio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoipTwilio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8154ED1A7946DF001ABEA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F8154EE1A7946DF001ABEA9 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F8154F31A7946DF001ABEA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F8154F51A7946DF001ABEA9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1F8154F81A7946DF001ABEA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1F8154FE1A7946DF001ABEA9 /* VoipTwilio.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoipTwilio.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8155031A7946DF001ABEA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FAD94921A7BD89200BD6E57 /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		1FAD94CA1A7BDC6E00BD6E57 /* VoipTwilio-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoipTwilio-Bridging-Header.h"; sourceTree = "<group>"; };
+		1FAD94CE1A7FE80000BD6E57 /* SwiftRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRequest.swift; sourceTree = "<group>"; };
+		50EDEE2BFB357CCCF8A915FC /* Pods_SwiftPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C8098884BE96143082A3F8E /* Pods-VoipTwilio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoipTwilio.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoipTwilio/Pods-VoipTwilio.release.xcconfig"; sourceTree = "<group>"; };
+		81C09226BFE469CD443247E2 /* Pods-VoipTwilioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoipTwilioTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoipTwilioTests/Pods-VoipTwilioTests.release.xcconfig"; sourceTree = "<group>"; };
+		9AA5184F3264F50EEF5827EB /* Pods_VoipTwilio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoipTwilio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF23AF91D63DCE70085527D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9CF23AFB1D63DCF90085527D /* DialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialViewController.swift; sourceTree = "<group>"; };
+		9CF23AFD1D64071C0085527D /* ringtone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ringtone.mp3; sourceTree = "<group>"; };
+		BB0760FB031596993F537BFF /* Pods-VoipTwilioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoipTwilioTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoipTwilioTests/Pods-VoipTwilioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE038028A1E5EEFBE8D7913A /* Pods-VoipTwilio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoipTwilio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoipTwilio/Pods-VoipTwilio.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F8154E61A7946DF001ABEA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F8E88CAC081D3FE8102B422 /* Pods_SwiftPhone.framework in Frameworks */,
+				801EDB9D1EE9E10AFBD43509 /* Pods_VoipTwilio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8154FB1A7946DF001ABEA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F8154E01A7946DF001ABEA9 = {
+			isa = PBXGroup;
+			children = (
+				1F8154EB1A7946DF001ABEA9 /* VoipTwilio */,
+				1F8155011A7946DF001ABEA9 /* VoipTwilioTests */,
+				1F8154EA1A7946DF001ABEA9 /* Products */,
+				774BE9D5CFE0E68DDF685540 /* Pods */,
+				648769C8F7446FD61A434AA6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F8154EA1A7946DF001ABEA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F8154E91A7946DF001ABEA9 /* VoipTwilio.app */,
+				1F8154FE1A7946DF001ABEA9 /* VoipTwilio.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F8154EB1A7946DF001ABEA9 /* VoipTwilio */ = {
+			isa = PBXGroup;
+			children = (
+				9CF23AFD1D64071C0085527D /* ringtone.mp3 */,
+				1F8154EE1A7946DF001ABEA9 /* AppDelegate.swift */,
+				1F8154F21A7946DF001ABEA9 /* Main.storyboard */,
+				9CF23AF91D63DCE70085527D /* MainViewController.swift */,
+				9CF23AFB1D63DCF90085527D /* DialViewController.swift */,
+				1F8154F51A7946DF001ABEA9 /* Images.xcassets */,
+				1F8154F71A7946DF001ABEA9 /* LaunchScreen.xib */,
+				1F8154EC1A7946DF001ABEA9 /* Supporting Files */,
+				1FAD94921A7BD89200BD6E57 /* Phone.swift */,
+				1FAD94CA1A7BDC6E00BD6E57 /* VoipTwilio-Bridging-Header.h */,
+				1FAD94CE1A7FE80000BD6E57 /* SwiftRequest.swift */,
+			);
+			name = VoipTwilio;
+			path = SwiftPhone;
+			sourceTree = "<group>";
+		};
+		1F8154EC1A7946DF001ABEA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F8154ED1A7946DF001ABEA9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F8155011A7946DF001ABEA9 /* VoipTwilioTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F8155021A7946DF001ABEA9 /* Supporting Files */,
+			);
+			name = VoipTwilioTests;
+			path = SwiftPhoneTests;
+			sourceTree = "<group>";
+		};
+		1F8155021A7946DF001ABEA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F8155031A7946DF001ABEA9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		648769C8F7446FD61A434AA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50EDEE2BFB357CCCF8A915FC /* Pods_SwiftPhone.framework */,
+				9AA5184F3264F50EEF5827EB /* Pods_VoipTwilio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		774BE9D5CFE0E68DDF685540 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE038028A1E5EEFBE8D7913A /* Pods-VoipTwilio.debug.xcconfig */,
+				6C8098884BE96143082A3F8E /* Pods-VoipTwilio.release.xcconfig */,
+				BB0760FB031596993F537BFF /* Pods-VoipTwilioTests.debug.xcconfig */,
+				81C09226BFE469CD443247E2 /* Pods-VoipTwilioTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F8154E81A7946DF001ABEA9 /* VoipTwilio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8155081A7946DF001ABEA9 /* Build configuration list for PBXNativeTarget "VoipTwilio" */;
+			buildPhases = (
+				5449C127B86A2CBECF0414D6 /* [CP] Check Pods Manifest.lock */,
+				1F8154E51A7946DF001ABEA9 /* Sources */,
+				1F8154E61A7946DF001ABEA9 /* Frameworks */,
+				1F8154E71A7946DF001ABEA9 /* Resources */,
+				6747DB9FFD77E7CE6452CF2E /* [CP] Embed Pods Frameworks */,
+				43E36144AD8EFEDE2A9EA9BC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoipTwilio;
+			productName = SwiftPhone;
+			productReference = 1F8154E91A7946DF001ABEA9 /* VoipTwilio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F8154FD1A7946DF001ABEA9 /* VoipTwilioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F81550B1A7946DF001ABEA9 /* Build configuration list for PBXNativeTarget "VoipTwilioTests" */;
+			buildPhases = (
+				B2AAE31C6E74D1AE6837F504 /* [CP] Check Pods Manifest.lock */,
+				1F8154FA1A7946DF001ABEA9 /* Sources */,
+				1F8154FB1A7946DF001ABEA9 /* Frameworks */,
+				1F8154FC1A7946DF001ABEA9 /* Resources */,
+				AC03ED6517A37F3A759CA873 /* [CP] Embed Pods Frameworks */,
+				3614468AF92F20E4BFD78680 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F8155001A7946DF001ABEA9 /* PBXTargetDependency */,
+			);
+			name = VoipTwilioTests;
+			productName = SwiftPhoneTests;
+			productReference = 1F8154FE1A7946DF001ABEA9 /* VoipTwilio.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F8154E11A7946DF001ABEA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Devin Rader";
+				TargetAttributes = {
+					1F8154E81A7946DF001ABEA9 = {
+						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					1F8154FD1A7946DF001ABEA9 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 1F8154E81A7946DF001ABEA9;
+					};
+				};
+			};
+			buildConfigurationList = 1F8154E41A7946DF001ABEA9 /* Build configuration list for PBXProject "VoipTwilio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F8154E01A7946DF001ABEA9;
+			productRefGroup = 1F8154EA1A7946DF001ABEA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F8154E81A7946DF001ABEA9 /* VoipTwilio */,
+				1F8154FD1A7946DF001ABEA9 /* VoipTwilioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F8154E71A7946DF001ABEA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8154F41A7946DF001ABEA9 /* Main.storyboard in Resources */,
+				1F8154F91A7946DF001ABEA9 /* LaunchScreen.xib in Resources */,
+				9CF23AFE1D64071C0085527D /* ringtone.mp3 in Resources */,
+				1F8154F61A7946DF001ABEA9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8154FC1A7946DF001ABEA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3614468AF92F20E4BFD78680 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoipTwilioTests/Pods-VoipTwilioTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43E36144AD8EFEDE2A9EA9BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoipTwilio/Pods-VoipTwilio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5449C127B86A2CBECF0414D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6747DB9FFD77E7CE6452CF2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoipTwilio/Pods-VoipTwilio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC03ED6517A37F3A759CA873 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoipTwilioTests/Pods-VoipTwilioTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2AAE31C6E74D1AE6837F504 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F8154E51A7946DF001ABEA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAD94931A7BD89200BD6E57 /* Phone.swift in Sources */,
+				9CF23AFC1D63DCF90085527D /* DialViewController.swift in Sources */,
+				1F8154EF1A7946DF001ABEA9 /* AppDelegate.swift in Sources */,
+				1FAD94CF1A7FE80000BD6E57 /* SwiftRequest.swift in Sources */,
+				9CF23AFA1D63DCE70085527D /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8154FA1A7946DF001ABEA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F8155001A7946DF001ABEA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F8154E81A7946DF001ABEA9 /* VoipTwilio */;
+			targetProxy = 1F8154FF1A7946DF001ABEA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F8154F21A7946DF001ABEA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F8154F31A7946DF001ABEA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F8154F71A7946DF001ABEA9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F8154F81A7946DF001ABEA9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F8155061A7946DF001ABEA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F8155071A7946DF001ABEA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F8155091A7946DF001ABEA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE038028A1E5EEFBE8D7913A /* Pods-VoipTwilio.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SwiftPhone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "TW.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = VoipTwilio;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftPhone/VoipTwilio-Bridging-Header.h";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		1F81550A1A7946DF001ABEA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C8098884BE96143082A3F8E /* Pods-VoipTwilio.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SwiftPhone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "TW.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = VoipTwilio;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftPhone/VoipTwilio-Bridging-Header.h";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		1F81550C1A7946DF001ABEA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB0760FB031596993F537BFF /* Pods-VoipTwilioTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftPhoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TW.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = VoipTwilio;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoipTwilio.app/VoipTwilio";
+			};
+			name = Debug;
+		};
+		1F81550D1A7946DF001ABEA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C09226BFE469CD443247E2 /* Pods-VoipTwilioTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftPhoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TW.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = VoipTwilio;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoipTwilio.app/VoipTwilio";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F8154E41A7946DF001ABEA9 /* Build configuration list for PBXProject "VoipTwilio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8155061A7946DF001ABEA9 /* Debug */,
+				1F8155071A7946DF001ABEA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F8155081A7946DF001ABEA9 /* Build configuration list for PBXNativeTarget "VoipTwilio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8155091A7946DF001ABEA9 /* Debug */,
+				1F81550A1A7946DF001ABEA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F81550B1A7946DF001ABEA9 /* Build configuration list for PBXNativeTarget "VoipTwilioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F81550C1A7946DF001ABEA9 /* Debug */,
+				1F81550D1A7946DF001ABEA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F8154E11A7946DF001ABEA9 /* Project object */;
+}
