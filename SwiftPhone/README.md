@@ -7,6 +7,8 @@ Run the application and change easily the constants for Twilio connectivity:
 - TwiML App Sid : sid your app in Twilio account
 - Voip destination number: the number to call
 
+![Screen](screen.png?raw=true "Screen")
+
 
 This application is based on SwiftPhone project : https://github.com/devinrader/SwiftPhone
 SwiftPhone is an implementation in Swift of the BasicPhone example application created by Twilio.

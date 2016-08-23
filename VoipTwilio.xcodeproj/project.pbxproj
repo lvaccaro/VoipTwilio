@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F8E88CAC081D3FE8102B422 /* Pods_SwiftPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EDEE2BFB357CCCF8A915FC /* Pods_SwiftPhone.framework */; };
 		1F8154EF1A7946DF001ABEA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8154EE1A7946DF001ABEA9 /* AppDelegate.swift */; };
 		1F8154F41A7946DF001ABEA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8154F21A7946DF001ABEA9 /* Main.storyboard */; };
 		1F8154F61A7946DF001ABEA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8154F51A7946DF001ABEA9 /* Images.xcassets */; };
@@ -15,6 +14,7 @@
 		1FAD94931A7BD89200BD6E57 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD94921A7BD89200BD6E57 /* Phone.swift */; };
 		1FAD94CF1A7FE80000BD6E57 /* SwiftRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD94CE1A7FE80000BD6E57 /* SwiftRequest.swift */; };
 		801EDB9D1EE9E10AFBD43509 /* Pods_VoipTwilio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA5184F3264F50EEF5827EB /* Pods_VoipTwilio.framework */; };
+		9C3160211D6BD529001A8A7C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9C3160201D6BD529001A8A7C /* README.md */; };
 		9CF23AFA1D63DCE70085527D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF23AF91D63DCE70085527D /* MainViewController.swift */; };
 		9CF23AFC1D63DCF90085527D /* DialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF23AFB1D63DCF90085527D /* DialViewController.swift */; };
 		9CF23AFE1D64071C0085527D /* ringtone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF23AFD1D64071C0085527D /* ringtone.mp3 */; };
@@ -46,6 +46,7 @@
 		6C8098884BE96143082A3F8E /* Pods-VoipTwilio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoipTwilio.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoipTwilio/Pods-VoipTwilio.release.xcconfig"; sourceTree = "<group>"; };
 		81C09226BFE469CD443247E2 /* Pods-VoipTwilioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoipTwilioTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoipTwilioTests/Pods-VoipTwilioTests.release.xcconfig"; sourceTree = "<group>"; };
 		9AA5184F3264F50EEF5827EB /* Pods_VoipTwilio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoipTwilio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C3160201D6BD529001A8A7C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9CF23AF91D63DCE70085527D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9CF23AFB1D63DCF90085527D /* DialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialViewController.swift; sourceTree = "<group>"; };
 		9CF23AFD1D64071C0085527D /* ringtone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ringtone.mp3; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F8E88CAC081D3FE8102B422 /* Pods_SwiftPhone.framework in Frameworks */,
 				801EDB9D1EE9E10AFBD43509 /* Pods_VoipTwilio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +107,7 @@
 				1FAD94921A7BD89200BD6E57 /* Phone.swift */,
 				1FAD94CA1A7BDC6E00BD6E57 /* VoipTwilio-Bridging-Header.h */,
 				1FAD94CE1A7FE80000BD6E57 /* SwiftRequest.swift */,
+				9C3160201D6BD529001A8A7C /* README.md */,
 			);
 			name = VoipTwilio;
 			path = SwiftPhone;
@@ -363,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3160211D6BD529001A8A7C /* README.md in Sources */,
 				1FAD94931A7BD89200BD6E57 /* Phone.swift in Sources */,
 				9CF23AFC1D63DCF90085527D /* DialViewController.swift in Sources */,
 				1F8154EF1A7946DF001ABEA9 /* AppDelegate.swift in Sources */,
